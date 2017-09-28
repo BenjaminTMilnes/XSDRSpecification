@@ -36,13 +36,30 @@ The &lt;authors&gt; is a container element for &lt;author&gt; elements. It shoul
 
 ```xml
 <document>
-<authors>
-<author></author>
-<author></author>
-<author></author>
-</authors>
+  <authors>
+    <author></author>
+    <author></author>
+    <author></author>
+  </authors>
 </document>
 ```
+
+### &lt;author&gt;
+
+The &lt;author&gt; element is used to define an author of the document. It should be contained within the &lt;authors&gt; element. There can be any number of &lt;author&gt; elements within the &lt;authors&gt; element.
+
+The &lt;author&gt; element can contain a variety of information about the author, including their name, their email address, the institution that they're associated with, the address of their academic department, and so on. Templates and style sheets determine how this information is included in the final printed document or PDF. Additional information about the author can be included here so that if one has the XSDR file for the document, one can identify and contact the author more easily.
+
+```xml
+<authors>
+  <author>
+    <first-name>Benjamin</first-name>
+	<last-name>Milnes</last-name>
+	<email-address>b.t.milnes@example.com</email-address>
+  </author>
+</authors>
+```
+
 
 ## Text Flow Elements
 
