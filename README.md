@@ -34,12 +34,48 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 
 Synonyms: &lt;p&gt;
 
+Analogous to the HTML &lt;p&gt; element.
+
 The &lt;paragraph&gt; element defines a textual paragraph within the document.
 
 ```xml
 <paragraph>
-  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
 </paragraph>
 ```
 
+Or alternatively:
+
+```xml
+<p>
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+</p>
+```
+
 The &lt;paragraph&gt; element should not be used for sections of text that are not strictly paragraphs. For example, if, in the page template, you want to put the title of the document at the top of every page, you should not contain it within &lt;paragraph&gt; tags, as it is not paragraph text. Instead, use a generic text container element.
+
+### &lt;line-break&gt;
+
+Synonyms: &lt;lb&gt;
+
+Analogous to the HTML &lt;br&gt; element.
+
+The &lt;line-break&gt; defines a point at which in-line elements should begin flowing onto the next line.
+
+```xml
+<paragraph>
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+  <line-break />
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack.
+</paragraph>
+```
+
+Or alternatively:
+
+```xml
+<p>
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+  <lb />
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack.
+</p>
+```
