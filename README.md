@@ -28,6 +28,22 @@ Allowing for synonyms makes XSDR much easier to learn. For example, someone unfa
 
 Synonyms also make XSDR more predictable, and faster to use. It's easier to guess what the name for an element or attribute might be, so you don't have to look it up as often.
 
+## Document Metadata Elements
+
+### &lt;authors&gt;
+
+The &lt;authors&gt; is a container element for &lt;author&gt; elements. It should be contained within the main &lt;document&gt; element. There should only be one &lt;authors&gt; element per document.
+
+```xml
+<document>
+<authors>
+<author></author>
+<author></author>
+<author></author>
+</authors>
+</document>
+```
+
 ## Text Flow Elements
 
 ### &lt;paragraph&gt;
