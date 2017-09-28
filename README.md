@@ -27,3 +27,19 @@ XSDR allows a large number of synonyms - element names, attribute names, and att
 Allowing for synonyms makes XSDR much easier to learn. For example, someone unfamiliar with XSDR, upon seeing a &lt;paragraph&gt; element, would immediately know that it defines a paragraph. But it does not do this at the expense of making it easy to use - having to type &lt;paragraph&gt; for every paragraph would be annoying, thus &lt;p&gt; is allowed.
 
 Synonyms also make XSDR more predictable, and faster to use. It's easier to guess what the name for an element or attribute might be, so you don't have to look it up as often.
+
+## Text Flow Elements
+
+### &lt;paragraph&gt;
+
+Synonyms: &lt;p&gt;
+
+The &lt;paragraph&gt; element defines a textual paragraph within the document.
+
+```xml
+<paragraph>
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+</paragraph>
+```
+
+The &lt;paragraph&gt; element should not be used for sections of text that are not strictly paragraphs. For example, if, in the page template, you want to put the title of the document at the top of every page, you should not contain it within &lt;paragraph&gt; tags, as it is not paragraph text. Instead, use a generic text container element.
