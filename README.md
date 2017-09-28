@@ -4,6 +4,10 @@
 
 All rights reserved. No part of this repository, or the information contained within it - including all past and future revisions and branches - may be copied or reproduced, be it physically, electronically - including by forking or cloning this repository - or by any other means, without written permission from the copyright owner - B. T. Milnes.
 
+## Version
+
+Version 0.1
+
 ## Introduction
 
 One of the most popular tools for writing and formatting scientific papers is LaTeX - an extension of the TeX typesetting system. LaTeX makes it easy to format scientific documents, by deciding on many aspects of the format, style, and layout itself. LaTeX can also elegantly typeset mathematics, which is essential for a number of fields of study.
@@ -54,8 +58,8 @@ The &lt;author&gt; element can contain a variety of information about the author
 <authors>
   <author>
     <first-name>Benjamin</first-name>
-	<last-name>Milnes</last-name>
-	<email-address>b.t.milnes@example.com</email-address>
+    <last-name>Milnes</last-name>
+    <email-address>b.t.milnes@example.com</email-address>
   </author>
 </authors>
 ```
