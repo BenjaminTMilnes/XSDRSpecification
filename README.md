@@ -43,11 +43,13 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 ## Document Metadata Elements
 
 + [&lt;document&gt;](#document)
++ [&lt;abstract&gt;](#abstract)
 + [&lt;authors&gt;](#authors)
 + [&lt;author&gt;](#author)
 + [&lt;first-name&gt;](#first-name)
 + [&lt;last-name&gt;](#last-name)
 + [&lt;name&gt;](#name)
++ [&lt;email-address&gt;](#email-address)
 
 ### &lt;document&gt;
 
@@ -63,6 +65,7 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
     </author>
   </authors>
   <title>XSDR Specification</title>
+  <abstract>Something, something, something ... dark side.</abstract>
 </document>
 ```
 
@@ -71,6 +74,10 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
 |Name       |Synonyms    |Allowed Values |
 |-----------|------------|---------------|
 |version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
+
+### &lt;abstract&gt;
+
+The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
 
 ### &lt;authors&gt;
 
