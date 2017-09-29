@@ -34,6 +34,29 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 
 ## Document Metadata Elements
 
+### &lt;document&gt;
+
+The &lt;document&gt; element is the root element for XSDR. There must be exactly one &lt;document&gt; element in an XSDR file, and all other elements must be contained within it.
+
+```xml
+<document version="0.1">
+  <authors>
+    <author>
+      <first-name>Benjamin</first-name>
+      <last-name>Milnes</last-name>
+      <email-address>b.t.milnes@example.com</email-address>
+    </author>
+  </authors>
+  <title>XSDR Specification</title>
+</document>
+```
+
+#### Attributes
+
+|Name       |Synonyms    |Allowed Values |
+|-----------|------------|---------------|
+|version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
+
 ### &lt;authors&gt;
 
 The &lt;authors&gt; is a container element for &lt;author&gt; elements. It should be contained within the main &lt;document&gt; element. There should only be one &lt;authors&gt; element per document.
