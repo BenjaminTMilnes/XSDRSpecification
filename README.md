@@ -118,6 +118,12 @@ The &lt;last-name&gt; element defines the last name of an author. It must be con
 
 The &lt;name&gt; element defines the name of an author. It can be used as an alternative to specifying the first and last name of an author separately. If the &lt;name&gt; element is given, any information in the &lt;first-name&gt; and &lt;last-name&gt; elements for that author is ignored.
 
+### &lt;email-address&gt;
+
+Synonyms: &lt;ea&gt;
+
+The &lt;email-address&gt; element defines the email address of an author. It must be contained within an &lt;author&gt; element.
+
 ## Text Flow Elements
 
 ### &lt;paragraph&gt;
