@@ -34,6 +34,13 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 
 ## Document Metadata Elements
 
++ [&lt;document&gt;](#document)
++ [&lt;authors&gt;](#authors)
++ [&lt;author&gt;](#author)
++ [&lt;first-name&gt;](#first-name)
++ [&lt;last-name&gt;](#last-name)
++ [&lt;name&gt;](#name)
+
 ### &lt;document&gt;
 
 The &lt;document&gt; element is the root element for XSDR. There must be exactly one &lt;document&gt; element in an XSDR file, and all other elements must be contained within it.
