@@ -87,6 +87,17 @@ The &lt;author&gt; element can contain a variety of information about the author
 </authors>
 ```
 
+### &lt;first-name&gt;
+
+Synonyms: &lt;fn&gt;
+
+The &lt;first-name&gt; element defines the first name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
+
+### &lt;last-name&gt;
+
+Synonyms: &lt;ln&gt;
+
+The &lt;last-name&gt; element defines the last name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
 
 ## Text Flow Elements
 
