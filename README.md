@@ -45,6 +45,8 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 ## Document Metadata Elements
 
 + [&lt;document&gt;](#document)
++ [&lt;title&gt;](#title)
++ [&lt;subtitle&gt;](#subtitle)
 + [&lt;abstract&gt;](#abstract)
 + [&lt;authors&gt;](#authors)
 + [&lt;author&gt;](#author)
@@ -76,6 +78,20 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
 |Name       |Synonyms    |Allowed Values |
 |-----------|------------|---------------|
 |version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
+
+### &lt;style&gt;
+
+Analogous to the HTML &lt;style&gt; element.
+
+The &lt;style&gt; element contains style information for the document. There can be multiple &lt;style&gt; elements in a document. The &lt;style&gt; element must be directly contained by the &lt;document&gt; element.
+
+Styling information for XSDR documents is given in DSS - an analogue of CSS used for paged documents.
+
+#### Attributes
+
+|Name       |Synonyms    |Allowed Values |
+|-----------|------------|---------------|
+|type       |-           |the styling language that this information is written in, e.g. "DSS" |
 
 ### &lt;title&gt;
 
