@@ -182,3 +182,37 @@ Or alternatively:
   Grumpy Wizards make toxic brew for the Evil Queen and Jack.
 </p>
 ```
+
+## Lists
+
+### &lt;ordered-list&gt;
+
+Synonyms: &lt;ol&gt;
+
+Analogous to the HTML &lt;ol&gt; element. It works in the same way
+
+The &lt;ordered-list&gt; element defines a numbered list of items.
+
+```xml
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
+### &lt;unordered-list&gt;
+
+Synonyms: &lt;ul&gt;
+
+Analogous to the HTML &lt;ul&gt; element. It works in the same way.
+
+The &lt;unordered-list&gt; element defines a bulleted list of items.
+
+```xml
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ul>
+```
