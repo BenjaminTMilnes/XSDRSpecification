@@ -75,6 +75,20 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
 |-----------|------------|---------------|
 |version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
 
+### &lt;title&gt;
+
+The &lt;title&gt; element defines the title of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+
+The &lt;title&gt; element should be directly contained by the &lt;document&gt; element, and it may not contain any formatting tags such as bold or italic font tags.
+
+### &lt;subtitle&gt;
+
+The &lt;subtitle&gt; element defines the subtitle of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+
+The &lt;subtitle&gt; element should be directly contained by the &lt;document&gt; element, and it may not contain any formatting tags such as bold or italic font tags.
+
+The subtitle element is optional, and whether and how you choose to split text between the title and subtitle elements is up to you.
+
 ### &lt;abstract&gt;
 
 The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
