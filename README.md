@@ -76,6 +76,14 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 
 The &lt;document&gt; element is the root element for XSDR. There must be exactly one &lt;document&gt; element in an XSDR file, and all other elements must be contained within it.
 
+#### Attributes
+
+|Name       |Synonyms    |Allowed Values |
+|-----------|------------|---------------|
+|version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
+
+#### Example
+
 ```xml
 <document version="0.1">
   <authors>
@@ -89,12 +97,6 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
   <abstract>Something, something, something ... dark side.</abstract>
 </document>
 ```
-
-#### Attributes
-
-|Name       |Synonyms    |Allowed Values |
-|-----------|------------|---------------|
-|version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
 
 
 
@@ -110,7 +112,20 @@ Styling information for XSDR documents is given in DSS - an analogue of CSS used
 
 |Name       |Synonyms    |Allowed Values |
 |-----------|------------|---------------|
-|type       |-           |the styling language that this information is written in, e.g. "DSS" |
+|type       |-           |the styling language that this information is written in; case-insensitive; e.g. "DSS" |
+
+#### Example
+
+```xml
+<document version="0.1">
+  <style type="DSS">
+    h1 {
+	  font-height: 20pt;
+	  font-weight: bold;
+	}
+  </style>
+</document>
+```
 
 
 
@@ -153,6 +168,8 @@ The subtitle element is optional, and whether and how you choose to split text b
 
 The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
 
+#### Example
+
 ```xml
 <document version="0.1">
   <abstract>Something, something, something ... dark side.</abstract>
@@ -167,6 +184,8 @@ The &lt;keywords&gt; element is used to give a set of keywords relevant to the d
 
 The keywords should be a list of comma-separated text strings.
 
+#### Example
+
 ```xml
 <document version="0.1">
   <keywords>delta baryon, pion, Tokai-Kamioka, photon</keywords>
@@ -178,6 +197,8 @@ The keywords should be a list of comma-separated text strings.
 ### &lt;authors&gt;
 
 The &lt;authors&gt; is a container element for &lt;author&gt; elements. It should be contained within the main &lt;document&gt; element. There should only be one &lt;authors&gt; element per document.
+
+#### Example
 
 ```xml
 <document>
@@ -196,6 +217,8 @@ The &lt;authors&gt; is a container element for &lt;author&gt; elements. It shoul
 The &lt;author&gt; element is used to define an author of the document. It should be contained within the &lt;authors&gt; element. There can be any number of &lt;author&gt; elements within the &lt;authors&gt; element.
 
 The &lt;author&gt; element can contain a variety of information about the author, including their name, their email address, the institution that they're associated with, the address of their academic department, and so on. Templates and style sheets determine how this information is included in the final printed document or PDF. Additional information about the author can be included here so that if one has the XSDR file for the document, one can identify and contact the author more easily.
+
+#### Example
 
 ```xml
 <authors>
@@ -254,13 +277,7 @@ Analogous to the HTML &lt;p&gt; element.
 
 The &lt;paragraph&gt; element defines a textual paragraph within the document.
 
-```xml
-<paragraph>
-  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
-</paragraph>
-```
-
-Or alternatively:
+#### Example
 
 ```xml
 <p>
@@ -280,15 +297,7 @@ Analogous to the HTML &lt;br&gt; element.
 
 The &lt;line-break&gt; defines a point at which in-line elements should begin flowing onto the next line.
 
-```xml
-<paragraph>
-  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
-  <line-break />
-  Grumpy Wizards make toxic brew for the Evil Queen and Jack.
-</paragraph>
-```
-
-Or alternatively:
+#### Example
 
 ```xml
 <p>
@@ -316,6 +325,8 @@ Analogous to the HTML &lt;ol&gt; element. It works in the same way
 
 The &lt;ordered-list&gt; element defines a numbered list of items.
 
+#### Example
+
 ```xml
 <ol>
   <li>First item</li>
@@ -334,6 +345,8 @@ Analogous to the HTML &lt;ul&gt; element. It works in the same way.
 
 The &lt;unordered-list&gt; element defines a bulleted list of items.
 
+#### Example
+
 ```xml
 <ul>
   <li>Item</li>
@@ -351,6 +364,8 @@ Synonyms: &lt;li&gt;
 Analogous to the HTML &lt;li&gt; element. It works in the same way.
 
 The &lt;list-item&gt; element defines an item in an ordered or unordered list.
+
+#### Example
 
 ```xml
 <ol>
