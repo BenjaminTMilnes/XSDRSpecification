@@ -133,6 +133,18 @@ The &lt;abstract&gt; element defines the abstract for the document. Text placed 
 </document>
 ```
 
+### &lt;keywords&gt;
+
+The &lt;keywords&gt; element is used to give a set of keywords relevant to the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+
+The keywords should be a list of comma-separated text strings.
+
+```xml
+<document version="0.1">
+  <keywords>delta baryon, pion, Tokai-Kamioka, photon</keywords>
+</document>
+```
+
 ### &lt;authors&gt;
 
 The &lt;authors&gt; is a container element for &lt;author&gt; elements. It should be contained within the main &lt;document&gt; element. There should only be one &lt;authors&gt; element per document.
