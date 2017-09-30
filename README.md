@@ -4,6 +4,8 @@
 
 All rights reserved. No part of this repository, or the information contained within it - including all past and future revisions and branches - may be copied or reproduced, be it physically, electronically - including by forking or cloning this repository - or by any other means, without written permission from the copyright owner - B. T. Milnes.
 
+
+
 ## Contents
 
 + [Copyright](#copyright)
@@ -11,12 +13,17 @@ All rights reserved. No part of this repository, or the information contained wi
 + [Introduction](#introduction)
 + [Document Metadata Elements](#document-metadata-elements)
 + [Text Flow Elements](#text-flow-elements)
++ [Lists](#lists)
+
+
 
 ## Version
 
 Version 0.1
 
 The master branch of this repository is used for writing the next edition of the XSDR specification. Thus the repository as viewed on the master branch is not the latest finalised version. For finalised versions, see the release branches and tags.
+
+
 
 ## Introduction
 
@@ -28,11 +35,15 @@ XSDR is intended to be an alternative to LaTeX as a document layout and formatti
 
 This repository just holds the specification for XSDR - it does not contain an XSDR compiler.
 
+
+
 ### Why not just use HTML?
 
 XSDR has a number of similarities to HTML - paragraph and heading tags, line break tags - and HTML is already used by a number of people to write scientific documents, so why not just use HTML, and compile HTML into PDF files?
 
 HTML is designed for the web, where there is no concept of a document comprised of multiple pages, with each page a specific, physical size. HTML has no concept of page breaks, page headers and footers, contents tables, and in-line citations. There are easy ways to work around this in HTML (for example, a page break could be defined by &lt;div class="page-break"&gt;&lt;/div&gt;, and then simply interpreted by the compiler), but they would be no simpler than just having a dedicated XML specification for printed documents (in XSDR, a page break is defined by &lt;page-break /&gt; or even just &lt;pb /&gt;).
+
+
 
 ### Synonyms
 
@@ -42,18 +53,24 @@ Allowing for synonyms makes XSDR much easier to learn. For example, someone unfa
 
 Synonyms also make XSDR more predictable, and faster to use. It's easier to guess what the name for an element or attribute might be, so you don't have to look it up as often.
 
+
+
 ## Document Metadata Elements
 
 + [&lt;document&gt;](#document)
++ [&lt;style&gt;](#style)
 + [&lt;title&gt;](#title)
 + [&lt;subtitle&gt;](#subtitle)
 + [&lt;abstract&gt;](#abstract)
++ [&lt;keywords&gt;](#keywords)
 + [&lt;authors&gt;](#authors)
 + [&lt;author&gt;](#author)
 + [&lt;first-name&gt;](#first-name)
 + [&lt;last-name&gt;](#last-name)
 + [&lt;name&gt;](#name)
 + [&lt;email-address&gt;](#email-address)
+
+
 
 ### &lt;document&gt;
 
@@ -79,6 +96,8 @@ The &lt;document&gt; element is the root element for XSDR. There must be exactly
 |-----------|------------|---------------|
 |version    |-           |the version of the XSDR specification to which your file conforms, e.g. 0.1 |
 
+
+
 ### &lt;style&gt;
 
 Analogous to the HTML &lt;style&gt; element.
@@ -93,6 +112,8 @@ Styling information for XSDR documents is given in DSS - an analogue of CSS used
 |-----------|------------|---------------|
 |type       |-           |the styling language that this information is written in, e.g. "DSS" |
 
+
+
 ### &lt;title&gt;
 
 The &lt;title&gt; element defines the title of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
@@ -106,6 +127,8 @@ The &lt;title&gt; element should be directly contained by the &lt;document&gt; e
   <title>XSDR Specification</title>
 </document>
 ```
+
+
 
 ### &lt;subtitle&gt;
 
@@ -123,6 +146,9 @@ The subtitle element is optional, and whether and how you choose to split text b
   <subtitle>Version 0.1</subtitle>
 </document>
 ```
+
+
+
 ### &lt;abstract&gt;
 
 The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
@@ -132,6 +158,8 @@ The &lt;abstract&gt; element defines the abstract for the document. Text placed 
   <abstract>Something, something, something ... dark side.</abstract>
 </document>
 ```
+
+
 
 ### &lt;keywords&gt;
 
@@ -144,6 +172,8 @@ The keywords should be a list of comma-separated text strings.
   <keywords>delta baryon, pion, Tokai-Kamioka, photon</keywords>
 </document>
 ```
+
+
 
 ### &lt;authors&gt;
 
@@ -158,6 +188,8 @@ The &lt;authors&gt; is a container element for &lt;author&gt; elements. It shoul
   </authors>
 </document>
 ```
+
+
 
 ### &lt;author&gt;
 
@@ -175,11 +207,15 @@ The &lt;author&gt; element can contain a variety of information about the author
 </authors>
 ```
 
+
+
 ### &lt;first-name&gt;
 
 Synonyms: &lt;fn&gt;
 
 The &lt;first-name&gt; element defines the first name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
+
+
 
 ### &lt;last-name&gt;
 
@@ -187,9 +223,13 @@ Synonyms: &lt;ln&gt;
 
 The &lt;last-name&gt; element defines the last name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
 
+
+
 ### &lt;name&gt;
 
 The &lt;name&gt; element defines the name of an author. It can be used as an alternative to specifying the first and last name of an author separately. If the &lt;name&gt; element is given, any information in the &lt;first-name&gt; and &lt;last-name&gt; elements for that author is ignored.
+
+
 
 ### &lt;email-address&gt;
 
@@ -197,10 +237,14 @@ Synonyms: &lt;ea&gt;
 
 The &lt;email-address&gt; element defines the email address of an author. It must be contained within an &lt;author&gt; element.
 
+
+
 ## Text Flow Elements
 
 + [&lt;paragraph&gt;](#paragraph)
 + [&lt;line-break&gt;](#line-break)
+
+
 
 ### &lt;paragraph&gt;
 
@@ -225,6 +269,8 @@ Or alternatively:
 ```
 
 The &lt;paragraph&gt; element should not be used for sections of text that are not strictly paragraphs. For example, if, in the page template, you want to put the title of the document at the top of every page, you should not contain it within &lt;paragraph&gt; tags, as it is not paragraph text. Instead, use a generic text container element.
+
+
 
 ### &lt;line-break&gt;
 
@@ -252,11 +298,15 @@ Or alternatively:
 </p>
 ```
 
+
+
 ## Lists
 
 + [&lt;ordered-list&gt;](#ordered-list)
 + [&lt;unordered-list&gt;](#unordered-list)
 + [&lt;list-item&gt;](#list-item)
+
+
 
 ### &lt;ordered-list&gt;
 
@@ -274,6 +324,8 @@ The &lt;ordered-list&gt; element defines a numbered list of items.
 </ol>
 ```
 
+
+
 ### &lt;unordered-list&gt;
 
 Synonyms: &lt;ul&gt;
@@ -289,6 +341,8 @@ The &lt;unordered-list&gt; element defines a bulleted list of items.
   <li>Item</li>
 </ul>
 ```
+
+
 
 ### &lt;list-item&gt;
 
