@@ -16,6 +16,8 @@ All rights reserved. No part of this repository, or the information contained wi
 
 Version 0.1
 
+The master branch of this repository is used for writing the next edition of the XSDR specification. Thus the repository as viewed on the master branch is not the latest finalised version. For finalised versions, see the release branches and tags.
+
 ## Introduction
 
 One of the most popular tools for writing and formatting scientific papers is LaTeX - an extension of the TeX typesetting system. LaTeX makes it easy to format scientific documents, by deciding on many aspects of the format, style, and layout itself. LaTeX can also elegantly typeset mathematics, which is essential for a number of fields of study.
@@ -81,6 +83,14 @@ The &lt;title&gt; element defines the title of the document. Text placed here is
 
 The &lt;title&gt; element should be directly contained by the &lt;document&gt; element, and it may not contain any formatting tags such as bold or italic font tags.
 
+#### Example
+
+```xml
+<document version="0.1">
+  <title>XSDR Specification</title>
+</document>
+```
+
 ### &lt;subtitle&gt;
 
 The &lt;subtitle&gt; element defines the subtitle of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
@@ -89,9 +99,23 @@ The &lt;subtitle&gt; element should be directly contained by the &lt;document&gt
 
 The subtitle element is optional, and whether and how you choose to split text between the title and subtitle elements is up to you.
 
+#### Example
+
+```xml
+<document version="0.1">
+  <title>XSDR Specification</title>
+  <subtitle>Version 0.1</subtitle>
+</document>
+```
 ### &lt;abstract&gt;
 
 The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
+
+```xml
+<document version="0.1">
+  <abstract>Something, something, something ... dark side.</abstract>
+</document>
+```
 
 ### &lt;authors&gt;
 
