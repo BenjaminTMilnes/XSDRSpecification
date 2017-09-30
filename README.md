@@ -133,6 +133,9 @@ The &lt;email-address&gt; element defines the email address of an author. It mus
 
 ## Text Flow Elements
 
++ [&lt;paragraph&gt;](#paragraph)
++ [&lt;line-break&gt;](#line-break)
+
 ### &lt;paragraph&gt;
 
 Synonyms: &lt;p&gt;
@@ -185,6 +188,10 @@ Or alternatively:
 
 ## Lists
 
++ [&lt;ordered-list&gt;](#ordered-list)
++ [&lt;unordered-list&gt;](#unordered-list)
++ [&lt;list-item&gt;](#list-item)
+
 ### &lt;ordered-list&gt;
 
 Synonyms: &lt;ol&gt;
@@ -210,6 +217,28 @@ Analogous to the HTML &lt;ul&gt; element. It works in the same way.
 The &lt;unordered-list&gt; element defines a bulleted list of items.
 
 ```xml
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ul>
+```
+
+### &lt;list-item&gt;
+
+Synonyms: &lt;li&gt;
+
+Analogous to the HTML &lt;li&gt; element. It works in the same way.
+
+The &lt;list-item&gt; element defines an item in an ordered or unordered list.
+
+```xml
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+
 <ul>
   <li>Item</li>
   <li>Item</li>
