@@ -291,6 +291,8 @@ The &lt;sections&gt; element defines the content of your document. All of the co
 
 The &lt;section&gt; element defines a section within your document. This might be a title page, the introduction, the index - no constraints are placed on how long or short a section can be, or what is put in it. If your entire document uses one page template, you can make the document have just one section.
 
+A &lt;section&gt; element cannot contain other &lt;section&gt; elements.
+
 #### Example
 
 ```xml
