@@ -262,6 +262,47 @@ The &lt;email-address&gt; element defines the email address of an author. It mus
 
 
 
+## Templating
+
+Templating is an essential part of XSDR. It allows you to easily apply formatting to a range of pages within your document. It also allows you to place elements on every page within a range of pages, while only defining their content and position once. For example, if you want the page number to appear at the bottom of every page, you would define a page template with the page number variable in the page footer, and then apply that page template to the relevant section of the document.
+
+
+
+### &lt;templates&gt;
+
+All of the templates used within the document are contained within the &lt;templates&gt; element, of which there should only be one in the document, and which usually appears after the metadata, but before the &lt;sections&gt; element.
+
+
+
+### &lt;page-template&gt;
+
+The &lt;page-template&gt; element is a special class of template for defining the format of each page within a section of the document. Use this to define the size and orientation of the page, as well as its margins, and any header and footer content.
+
+#### Example
+
+```xml
+<document>
+  <templates>
+    <page-template reference="main" style="page-size: a4; inner-margin: 3.0cm;">
+      <header>
+        <d style="text-alignment: centre;">Book Title</d>
+      </header>
+      <footer>
+        <d style="text-alignment: centre;"><page-number /></d>
+      </footer>
+    </page-template>
+  </templates>
+  <sections>
+    <section page-template-reference="main">
+      <h1>Introduction</h1>
+      <p>Grumpy wizards make toxic brew for the Evil Queen and Jack.</p>
+    </section>
+  </sections>
+</document>
+```
+
+
+
 ## Sectioning
 
 An XSDR document is divided into sections. These sections can have meaning within your document - you can define one section for the introduction, another perhaps for experimental results, another for the conclusion. They are also a way of applying different page templates throughout the document. For example, for a book, page numbers are generally not printed on the first few pages - thus this section of the book would have a different page template to the rest.
@@ -278,9 +319,9 @@ The &lt;sections&gt; element defines the content of your document. All of the co
 <document>
   <sections>
     <section style="page-size: a4; inner-margin: 3.0cm;">
-	  <h1>Introduction</h1>
-	  <p>Grumpy wizards make toxic brew for the Evil Queen and Jack.</p>
-	</section>
+      <h1>Introduction</h1>
+      <p>Grumpy wizards make toxic brew for the Evil Queen and Jack.</p>
+    </section>
   </sections>
 </document>
 ```
