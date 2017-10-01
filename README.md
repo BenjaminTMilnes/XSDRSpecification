@@ -12,6 +12,8 @@ All rights reserved. No part of this repository, or the information contained wi
 + [Version](#version)
 + [Introduction](#introduction)
 + [Document Metadata Elements](#document-metadata-elements)
++ [Templating](#templating)
++ [Sectioning](#sectioning)
 + [Text Flow Elements](#text-flow-elements)
 + [Lists](#lists)
 
@@ -266,6 +268,9 @@ The &lt;email-address&gt; element defines the email address of an author. It mus
 
 Templating is an essential part of XSDR. It allows you to easily apply formatting to a range of pages within your document. It also allows you to place elements on every page within a range of pages, while only defining their content and position once. For example, if you want the page number to appear at the bottom of every page, you would define a page template with the page number variable in the page footer, and then apply that page template to the relevant section of the document.
 
++ [&lt;templates&gt;](#templates)
++ [&lt;page-template&gt;](#page-template)
+
 
 
 ### &lt;templates&gt;
@@ -306,6 +311,9 @@ The &lt;page-template&gt; element is a special class of template for defining th
 ## Sectioning
 
 An XSDR document is divided into sections. These sections can have meaning within your document - you can define one section for the introduction, another perhaps for experimental results, another for the conclusion. They are also a way of applying different page templates throughout the document. For example, for a book, page numbers are generally not printed on the first few pages - thus this section of the book would have a different page template to the rest.
+
++ [&lt;sections&gt;](#sections)
++ [&lt;section&gt;](#section)
 
 
 
