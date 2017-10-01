@@ -262,6 +262,50 @@ The &lt;email-address&gt; element defines the email address of an author. It mus
 
 
 
+## Sectioning
+
+An XSDR document is divided into sections. These sections can have meaning within your document - you can define one section for the introduction, another perhaps for experimental results, another for the conclusion. They are also a way of applying different page templates throughout the document. For example, for a book, page numbers are generally not printed on the first few pages - thus this section of the book would have a different page template to the rest.
+
+
+
+### &lt;sections&gt;
+
+The &lt;sections&gt; element defines the content of your document. All of the content of your document should be contained within the &lt;sections&gt; element. There may be only one &lt;sections&gt; element per document, and it must be directly contained by the &lt;document&gt; element.
+
+#### Example
+
+```xml
+<document>
+  <sections>
+    <section style="page-size: a4; inner-margin: 3.0cm;">
+	  <h1>Introduction</h1>
+	  <p>Grumpy wizards make toxic brew for the Evil Queen and Jack.</p>
+	</section>
+  </sections>
+</document>
+```
+
+
+
+### &lt;section&gt;
+
+The &lt;section&gt; element defines a section within your document. This might be a title page, the introduction, the index - no constraints are placed on how long or short a section can be, or what is put in it. If your entire document uses one page template, you can make the document have just one section.
+
+#### Example
+
+```xml
+<document>
+  <sections>
+    <section style="page-size: a4; inner-margin: 3.0cm;">
+	  <h1>Introduction</h1>
+	  <p>Grumpy wizards make toxic brew for the Evil Queen and Jack.</p>
+	</section>
+  </sections>
+</document>
+```
+
+
+
 ## Text Flow Elements
 
 + [&lt;paragraph&gt;](#paragraph)
