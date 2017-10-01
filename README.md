@@ -21,7 +21,7 @@ All rights reserved. No part of this repository, or the information contained wi
 
 ## Version
 
-Version 0.1
+**Version 0.1**
 
 The master branch of this repository is used for writing the next edition of the XSDR specification. Thus the repository as viewed on the master branch is not the latest finalised version. For finalised versions, see the release branches and tags.
 
@@ -29,13 +29,13 @@ The master branch of this repository is used for writing the next edition of the
 
 ## Introduction
 
-One of the most popular tools for writing and formatting scientific papers is LaTeX - an extension of the TeX typesetting system. LaTeX makes it easy to format scientific documents, by deciding on many aspects of the format, style, and layout itself. LaTeX can also elegantly typeset mathematics, which is essential for a number of fields of study.
+One of the most popular tools for writing and formatting scientific papers is LaTeX - an extension of the TeX typesetting system. LaTeX makes it easy to format scientific documents, by deciding on many aspects of the style and layout itself. LaTeX can also elegantly typeset mathematics, which is essential for a number of fields of study.
 
-However, LaTeX has a number of issues. As a syntax, it has a number of inconsistencies that make it unpredictable, which gives it a steep learning curve. And while the style and format that LaTeX uses by default is good for certain types of document, for others it isn't, and the workarounds for this are lengthy and clumsy.
+However, LaTeX has a number of issues. As a syntax, it has a number of inconsistencies that make it unpredictable, which gives it a steep learning curve. And while the style that LaTeX uses by default is good for certain types of document, for others it isn't, and the workarounds for this are lengthy and clumsy.
 
 XSDR is intended to be an alternative to LaTeX as a document layout and formatting syntax. It is an XML specification. It uses very clear, regular, predictable syntax to describe the contents of a printable, paged document. It has a number of superficial similarities to HTML.
 
-This repository just holds the specification for XSDR - it does not contain an XSDR compiler.
+This repository just holds the specification for XSDR - **it does not contain an XSDR compiler**.
 
 
 
@@ -49,11 +49,19 @@ HTML is designed for the web, where there is no concept of a document comprised 
 
 ### Synonyms
 
-XSDR allows a large number of synonyms - element names, attribute names, and attribute values that are semantically identical, and processed in the same way by the compiler. For example, a paragraph can be defined by &lt;paragraph&gt;&lt;/paragraph&gt; tags, but you can also define it using just &lt;p&gt;&lt;/p&gt; tags.
+XSDR allows a large number of **synonyms** - element names, attribute names, and attribute values that are **semantically identical, and processed in the same way by the compiler**. For example, a paragraph can be defined by &lt;paragraph&gt;&lt;/paragraph&gt; tags, but you can also define it using just &lt;p&gt;&lt;/p&gt; tags.
 
 Allowing for synonyms makes XSDR much easier to learn. For example, someone unfamiliar with XSDR, upon seeing a &lt;paragraph&gt; element, would immediately know that it defines a paragraph. But it does not do this at the expense of making it easy to use - having to type &lt;paragraph&gt; for every paragraph would be annoying, thus &lt;p&gt; is allowed.
 
 Synonyms also make XSDR more predictable, and faster to use. It's easier to guess what the name for an element or attribute might be, so you don't have to look it up as often.
+
+#### 'colour' vs. 'color'
+
+As part of the synonyms in XSDR, XSDR compilers will interpret British and American spellings of words identically. For example, you can specify the colour that text should be either with 'font-colour: blue;' or 'font-color: blue;'.
+
+The purpose of this is to reduce the amount of thought that has to go into menial tasks such as altering the colour of text. If you're used to typing 'colour', then you can just type it and it will work, and similarly if you're used to typing 'color'.
+
+This specification document, however, will be written using British standard spellings.
 
 
 
@@ -76,7 +84,7 @@ Synonyms also make XSDR more predictable, and faster to use. It's easier to gues
 
 ### &lt;document&gt;
 
-The &lt;document&gt; element is the root element for XSDR. There must be exactly one &lt;document&gt; element in an XSDR file, and all other elements must be contained within it.
+The &lt;document&gt; element is the **root element for XSDR**. There must be exactly one &lt;document&gt; element in an XSDR file, and all other elements must be contained within it.
 
 #### Attributes
 
@@ -108,7 +116,7 @@ Analogous to the HTML &lt;style&gt; element.
 
 The &lt;style&gt; element contains style information for the document. There can be multiple &lt;style&gt; elements in a document. The &lt;style&gt; element must be directly contained by the &lt;document&gt; element.
 
-Styling information for XSDR documents is given in DSS - an analogue of CSS used for paged documents.
+**Styling information for XSDR documents is given in DSS - an analogue of CSS used for paged documents.**
 
 #### Attributes
 
@@ -133,7 +141,7 @@ Styling information for XSDR documents is given in DSS - an analogue of CSS used
 
 ### &lt;title&gt;
 
-The &lt;title&gt; element defines the title of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+The &lt;title&gt; element defines the title of the document. **Text placed here is not automatically printed anywhere on any of the pages of the document.**
 
 The &lt;title&gt; element should be directly contained by the &lt;document&gt; element, and it may not contain any formatting tags such as bold or italic font tags.
 
@@ -149,11 +157,11 @@ The &lt;title&gt; element should be directly contained by the &lt;document&gt; e
 
 ### &lt;subtitle&gt;
 
-The &lt;subtitle&gt; element defines the subtitle of the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+The &lt;subtitle&gt; element defines the subtitle of the document. **Text placed here is not automatically printed anywhere on any of the pages of the document.**
 
 The &lt;subtitle&gt; element should be directly contained by the &lt;document&gt; element, and it may not contain any formatting tags such as bold or italic font tags.
 
-The subtitle element is optional, and whether and how you choose to split text between the title and subtitle elements is up to you.
+**The subtitle element is optional**, and whether and how you choose to split text between the title and subtitle elements is up to you.
 
 #### Example
 
@@ -168,7 +176,7 @@ The subtitle element is optional, and whether and how you choose to split text b
 
 ### &lt;abstract&gt;
 
-The &lt;abstract&gt; element defines the abstract for the document. Text placed in here is not automatically printed anywhere on any of the pages of the document.
+The &lt;abstract&gt; element defines the abstract for the document. **Text placed in here is not automatically printed anywhere on any of the pages of the document.**
 
 #### Example
 
@@ -182,7 +190,7 @@ The &lt;abstract&gt; element defines the abstract for the document. Text placed 
 
 ### &lt;keywords&gt;
 
-The &lt;keywords&gt; element is used to give a set of keywords relevant to the document. Text placed here is not automatically printed anywhere on any of the pages of the document.
+The &lt;keywords&gt; element is used to give a set of keywords relevant to the document. **Text placed here is not automatically printed anywhere on any of the pages of the document.**
 
 The keywords should be a list of comma-separated text strings.
 
@@ -281,7 +289,7 @@ All of the templates used within the document are contained within the &lt;templ
 
 ### &lt;page-template&gt;
 
-The &lt;page-template&gt; element is a special class of template for defining the format of each page within a section of the document. Use this to define the size and orientation of the page, as well as its margins, and any header and footer content.
+The &lt;page-template&gt; element is a special class of template for defining the format of each page within a section of the document. **Use this to define the size and orientation of the page, as well as its margins, and any header and footer content.**
 
 #### Example
 
@@ -340,7 +348,7 @@ The &lt;sections&gt; element defines the content of your document. All of the co
 
 The &lt;section&gt; element defines a section within your document. This might be a title page, the introduction, the index - no constraints are placed on how long or short a section can be, or what is put in it. If your entire document uses one page template, you can make the document have just one section.
 
-A &lt;section&gt; element cannot contain other &lt;section&gt; elements.
+**A &lt;section&gt; element cannot contain other &lt;section&gt; elements.**
 
 #### Example
 
@@ -368,7 +376,7 @@ A &lt;section&gt; element cannot contain other &lt;section&gt; elements.
 
 Synonyms: &lt;p&gt;
 
-Analogous to the HTML &lt;p&gt; element.
+**Analogous to the HTML &lt;p&gt; element.**
 
 The &lt;paragraph&gt; element defines a textual paragraph within the document.
 
@@ -388,7 +396,7 @@ The &lt;paragraph&gt; element should not be used for sections of text that are n
 
 Synonyms: &lt;lb&gt;
 
-Analogous to the HTML &lt;br&gt; element.
+**Analogous to the HTML &lt;br&gt; element.**
 
 The &lt;line-break&gt; defines a point at which in-line elements should begin flowing onto the next line.
 
@@ -416,7 +424,7 @@ The &lt;line-break&gt; defines a point at which in-line elements should begin fl
 
 Synonyms: &lt;ol&gt;
 
-Analogous to the HTML &lt;ol&gt; element. It works in the same way
+**Analogous to the HTML &lt;ol&gt; element.**
 
 The &lt;ordered-list&gt; element defines a numbered list of items.
 
@@ -436,7 +444,7 @@ The &lt;ordered-list&gt; element defines a numbered list of items.
 
 Synonyms: &lt;ul&gt;
 
-Analogous to the HTML &lt;ul&gt; element. It works in the same way.
+**Analogous to the HTML &lt;ul&gt; element.**
 
 The &lt;unordered-list&gt; element defines a bulleted list of items.
 
@@ -456,7 +464,7 @@ The &lt;unordered-list&gt; element defines a bulleted list of items.
 
 Synonyms: &lt;li&gt;
 
-Analogous to the HTML &lt;li&gt; element. It works in the same way.
+**Analogous to the HTML &lt;li&gt; element.**
 
 The &lt;list-item&gt; element defines an item in an ordered or unordered list.
 
