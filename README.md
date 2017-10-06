@@ -314,6 +314,14 @@ The &lt;page-template&gt; element is a special class of template for defining th
 </document>
 ```
 
+### &lt;header&gt;
+
+The &lt;header&gt; element is used to define content that should go in the header of each page of a section. The header element can only appear within a page template element - not within the sections directly. The content contained in the header element is copied onto every page of the sections that the page template is applied to, appearing at the top of the page.
+
+### &lt;footer&gt;
+
+The &lt;footer&gt; element is similar to the &lt;header&gt; element. It is used to define content that should go in the footer of each page of a section. The footer element can only appear within a page template element - not within the sections directly. The content contained in the footer element is copied onto every page of the sections that the page template is applied to, appearing at the bottom of the page.
+
 
 
 ## Sectioning
