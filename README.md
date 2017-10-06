@@ -399,9 +399,40 @@ The &lt;section&gt; element defines a section within your document. This might b
 
 ## Text Flow Elements
 
++ [&lt;heading1&gt; to &lt;heading10&gt;](#heading1-to-heading10)
 + [&lt;paragraph&gt;](#paragraph)
 + [&lt;line-break&gt;](#line-break)
 + [&lt;division&gt;](#division)
+
+
+
+### &lt;heading1&gt; to &lt;heading10&gt;
+
++ &lt;heading1&gt;
++ &lt;heading2&gt;
++ &lt;heading3&gt;
++ &lt;heading4&gt;
++ &lt;heading5&gt;
++ &lt;heading6&gt;
++ &lt;heading7&gt;
++ &lt;heading8&gt;
++ &lt;heading9&gt;
++ &lt;heading10&gt;
+
+Synonyms: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;h7&gt;, &lt;h8&gt;, &lt;h9&gt;, &lt;h10&gt;
+
+Analogous to the HTML elements &lt;h1&gt; to &lt;h6&gt;
+
+The elements &lt;heading1&gt; to &lt;heading10&gt; are used to define headings in your document. &lt;heading1&gt; should be the highest-level heading in your document. If you are writing a book, this is perhaps the part or chapter heading. &lt;heading10&gt; should be the lowest-level heading in your document. The precise meaning of each heading element is not defined in this specification, and is dependent on the type of document you are writing.
+
+#### Example
+
+```xml
+<h1>Grumpy Wizards and their Brews</h1>
+<p>
+  Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+</p>
+```
 
 
 
