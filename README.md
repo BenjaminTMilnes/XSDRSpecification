@@ -354,6 +354,7 @@ An XSDR document is divided into sections. These sections can have meaning withi
 
 + [&lt;sections&gt;](#sections)
 + [&lt;section&gt;](#section)
++ [&lt;page-break&gt;](#page-break)
 
 
 
@@ -393,6 +394,31 @@ The &lt;section&gt; element defines a section within your document. This might b
 	</section>
   </sections>
 </document>
+```
+
+
+
+### &lt;page-break&gt;
+
+Synonyms: &lt;pb&gt;
+
+The &lt;page-break&gt; element indicates that content following it should begin flowing onto the next page, and that the remainder of the current page should be left blank.
+
+#### Example
+
+```xml
+<section>
+  <h1>Grumpy Wizards and their Brews</h1>
+  <p>
+    Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+  </p>
+  <pb />
+  <!-- The following text will appear on the next page. -->
+  <h1>Grumpy Wizards and their Brews</h1>
+  <p>
+    Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. Grumpy Wizards make toxic brew for the Evil Queen and Jack. 
+  </p>
+</section>
 ```
 
 
