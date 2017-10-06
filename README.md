@@ -401,6 +401,7 @@ The &lt;section&gt; element defines a section within your document. This might b
 
 + [&lt;paragraph&gt;](#paragraph)
 + [&lt;line-break&gt;](#line-break)
++ [&lt;division&gt;](#division)
 
 
 
@@ -440,6 +441,25 @@ The &lt;line-break&gt; defines a point at which in-line elements should begin fl
   <lb />
   Grumpy Wizards make toxic brew for the Evil Queen and Jack.
 </p>
+```
+
+
+
+### &lt;division&gt;
+
+Synonyms: &lt;d&gt;
+
+**Analogous to the HTML &lt;div&gt; element.**
+
+The &lt;division&gt; element is a generic block element. It has no semantic meaning within the document. It's main use is for applying formatting to sections that otherwise aren't contained by a particular element. For example, if you wanted to place a textbox on the page with a blue background, and that textbox contained headings, paragraphs, and images, you would put all of the contents of the textbox within a &lt;division&gt; element, and then apply the blue background to the style of the &lt;division&gt; element.
+
+#### Example
+
+```xml
+<d style="background-colour: blue; inner-margin: 5mm;">
+  <h4>Grumpy Wizards and their Brews</h4>
+  <p>Grumpy Wizards make toxic brew for the Evil Queen and Jack.</p>
+</d>
 ```
 
 
