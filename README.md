@@ -98,8 +98,7 @@ The &lt;document&gt; element is the **root element for XSDR**. There must be exa
 <document version="0.1">
   <authors>
     <author>
-      <first-name>Benjamin</first-name>
-      <last-name>Milnes</last-name>
+      <name>B. T. Milnes</name>
       <email-address>b.t.milnes@example.com</email-address>
     </author>
   </authors>
@@ -241,8 +240,7 @@ The &lt;author&gt; element can contain a variety of information about the author
 ```xml
 <authors>
   <author>
-    <first-name>Benjamin</first-name>
-    <last-name>Milnes</last-name>
+    <name>B. T. Milnes</name>
     <email-address>b.t.milnes@example.com</email-address>
   </author>
 </authors>
@@ -250,25 +248,9 @@ The &lt;author&gt; element can contain a variety of information about the author
 
 
 
-### &lt;first-name&gt;
-
-Synonyms: &lt;fn&gt;
-
-The &lt;first-name&gt; element defines the first name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
-
-
-
-### &lt;last-name&gt;
-
-Synonyms: &lt;ln&gt;
-
-The &lt;last-name&gt; element defines the last name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
-
-
-
 ### &lt;name&gt;
 
-The &lt;name&gt; element defines the name of an author. It can be used as an alternative to specifying the first and last name of an author separately. If the &lt;name&gt; element is given, any information in the &lt;first-name&gt; and &lt;last-name&gt; elements for that author is ignored.
+The &lt;name&gt; element defines the name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
 
 
 
