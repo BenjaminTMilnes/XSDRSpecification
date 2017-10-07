@@ -404,6 +404,14 @@ Synonyms: &lt;pb&gt;
 
 The &lt;page-break&gt; element indicates that content following it should begin flowing onto the next page, and that the remainder of the current page should be left blank.
 
+If the type attribute is set to 'next-page', then content following the page break element will flow onto the next page. If the type is set to 'even-page', then content following the page break element will flow onto the next even-numbered page, and if the type is set to 'odd-page', then content following the page break element will flow onto the next odd-numbered page.
+
+#### Attributes
+
+|Name       |Synonyms    |Allowed Values |
+|-----------|------------|---------------|
+|type       |-           |one of: 'next-page', 'even-page', 'odd-page'; the default is 'next-page' |
+
 #### Example
 
 ```xml
