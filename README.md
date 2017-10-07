@@ -271,6 +271,12 @@ Synonyms: &lt;ea&gt;
 The &lt;email-address&gt; element defines the email address of an author. It must be contained within an &lt;author&gt; element.
 
 
+### &lt;address&gt;
+
+The &lt;address&gt; element defines the address of an author or organisation. It must be contained within an &lt;author&gt; element. The &lt;address&gt; element is optional.
+
+
+
 
 ## Templating
 
