@@ -73,12 +73,13 @@ This specification document, however, will be written using British standard spe
 + [&lt;subtitle&gt;](#subtitle)
 + [&lt;abstract&gt;](#abstract)
 + [&lt;keywords&gt;](#keywords)
++ [&lt;publication-date&gt;](#publication-date)
 + [&lt;authors&gt;](#authors)
 + [&lt;author&gt;](#author)
-+ [&lt;first-name&gt;](#first-name)
-+ [&lt;last-name&gt;](#last-name)
 + [&lt;name&gt;](#name)
 + [&lt;email-address&gt;](#email-address)
++ [&lt;address&gt;](#address)
++ [&lt;website&gt;](#website)
 
 
 
@@ -282,6 +283,7 @@ The &lt;address&gt; element defines the address of an author or organisation.
 The &lt;website&gt; element defines the website of an author or organisation.
 
 + It must be contained within an &lt;author&gt; element.
++ There can be multiple &lt;website&gt; elements for each author or organisation.
 + It is optional.
 
 
