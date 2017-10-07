@@ -250,7 +250,10 @@ The &lt;author&gt; element can contain a variety of information about the author
 
 ### &lt;name&gt;
 
-The &lt;name&gt; element defines the name of an author. It must be contained by an &lt;author&gt; element. It should not include any font-styling elements, such as italic or bold font elements.
+The &lt;name&gt; element defines the name of an author.
+
++ It must be directly contained by an &lt;author&gt; element.
++ It should not include any font-styling elements, such as italic or bold font elements.
 
 
 
@@ -258,19 +261,28 @@ The &lt;name&gt; element defines the name of an author. It must be contained by 
 
 Synonyms: &lt;ea&gt;
 
-The &lt;email-address&gt; element defines the email address of an author. It must be contained within an &lt;author&gt; element.
+The &lt;email-address&gt; element defines the email address of an author.
+
++ It must be contained within an &lt;author&gt; element.
++ It is optional.
 
 
 
 ### &lt;address&gt;
 
-The &lt;address&gt; element defines the address of an author or organisation. It must be contained within an &lt;author&gt; element. The &lt;address&gt; element is optional.
+The &lt;address&gt; element defines the address of an author or organisation.
+
++ It must be contained within an &lt;author&gt; element.
++ It is optional.
 
 
 
 ### &lt;website&gt;
 
-The &lt;website&gt; element defines the website of an author or organisation. It must be contained within an &lt;author&gt; element. The &lt;website&gt; element is optional.
+The &lt;website&gt; element defines the website of an author or organisation.
+
++ It must be contained within an &lt;author&gt; element.
++ It is optional.
 
 
 
