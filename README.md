@@ -204,6 +204,14 @@ The keywords should be a list of comma-separated text strings.
 
 
 
+### &lt;publication-date&gt;
+
+The &lt;publication-date&gt; element defines the date on which the document was published. If the document is a paper being submitted to a journal, the journal publishing the paper should set this field.
+
+The date should be in the format 'YYYY.MM.DD' - i.e. '2017.10.07'. Hours, minutes, and seconds should not be included.
+
+
+
 ### &lt;authors&gt;
 
 The &lt;authors&gt; is a container element for &lt;author&gt; elements. It should be contained within the main &lt;document&gt; element. There should only be one &lt;authors&gt; element per document.
@@ -271,9 +279,11 @@ Synonyms: &lt;ea&gt;
 The &lt;email-address&gt; element defines the email address of an author. It must be contained within an &lt;author&gt; element.
 
 
+
 ### &lt;address&gt;
 
 The &lt;address&gt; element defines the address of an author or organisation. It must be contained within an &lt;author&gt; element. The &lt;address&gt; element is optional.
+
 
 
 ### &lt;website&gt;
