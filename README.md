@@ -687,3 +687,19 @@ Synonyms: &lt;fn&gt;
 
 The &lt;footnote&gt; element defines a footnote. The footnote can be added into the document at the point where it is relevant - when the final document is rendered, it will be moved to the bottom of the page.
 
+
+
+### &lt;hyperlink&gt;
+
+Synonyms: &lt;hl&gt;
+
+**Analogous to the HTML &lt;a&gt; element.
+
+The &lt;hyperlink&gt; element defines a hyperlink.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|url|-|analogous to the HTML href attribute on &lt;a&gt; tags|
+
