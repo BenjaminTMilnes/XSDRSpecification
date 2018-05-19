@@ -671,3 +671,11 @@ The &lt;mathematics&gt; element defines a section of mathematics - either in-lin
 </p>
 ```
 
+
+
+### &lt;annotation&gt;
+
+Synonyms: &lt;a&gt;
+
+The &lt;annotation&gt; element defines an annotation. Annotations are not rendered when the document is printed, and are a way of adding comments to the digital form of the document.
+
