@@ -679,3 +679,11 @@ Synonyms: &lt;a&gt;
 
 The &lt;annotation&gt; element defines an annotation. Annotations are not rendered when the document is printed, and are a way of adding comments to the digital form of the document.
 
+
+
+### &lt;footnote&gt;
+
+Synonyms: &lt;fn&gt;
+
+The &lt;footnote&gt; element defines a footnote. The footnote can be added into the document at the point where it is relevant - when the final document is rendered, it will be moved to the bottom of the page.
+
