@@ -21,7 +21,7 @@ All rights reserved. No part of this repository, or the information contained wi
 
 ## Version
 
-**Version 0.1**
+**Version 0.2**
 
 The master branch of this repository is used for writing the next edition of the XSDR specification. Thus the repository as viewed on the master branch is not the latest finalised version. For finalised versions, see the release branches and tags.
 
