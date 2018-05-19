@@ -616,3 +616,22 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
   <li>Item</li>
 </ul>
 ```
+
+
+
+### &lt;quotation&gt;
+
+Synonyms: &lt;quote&gt;, &lt;q&gt;
+
+**Analogous to the HTML &lt;blockquote&gt; and &lt;q&gt; elements.
+
+The &lt;quotation&gt; element defines a quotation. If a &lt;quotation&gt; element is contained by a &lt;paragraph&gt; element, then it will be rendered as an in-line quotation, but if not, it will be rendered as a block quotation.
+
+#### Example
+
+```xml
+<p>
+  Einstein said, <q>Imagination is more important than knowledge.</q>
+</p>
+```
+
