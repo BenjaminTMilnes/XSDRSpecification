@@ -693,7 +693,7 @@ The &lt;footnote&gt; element defines a footnote. The footnote can be added into 
 
 Synonyms: &lt;hl&gt;
 
-**Analogous to the HTML &lt;a&gt; element.
+**Analogous to the HTML &lt;a&gt; element.**
 
 The &lt;hyperlink&gt; element defines a hyperlink.
 
@@ -702,4 +702,21 @@ The &lt;hyperlink&gt; element defines a hyperlink.
 |Name|Synonyms|Allowed Values|
 |---|---|---|
 |url|-|analogous to the HTML href attribute on &lt;a&gt; tags|
+
+#### Example
+
+```xml
+<p>
+  The GitHub repository for this XSDR Specification can be found <hl url="https://github.com/BenjaminTMilnes/XSDRSpecification/">here</hl>.
+</p>
+```
+
+
+
+### &lt;horizontal-rule&gt;
+
+Synonyms: &lt;hr&gt;
+
+**Analogous to the HTML &lt;hr&gt; element.**
+
 
