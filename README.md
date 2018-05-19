@@ -21,7 +21,7 @@ All rights reserved. No part of this repository, or the information contained wi
 
 ## Version
 
-**Version 0.1**
+**Version 0.2**
 
 The master branch of this repository is used for writing the next edition of the XSDR specification. Thus the repository as viewed on the master branch is not the latest finalised version. For finalised versions, see the release branches and tags.
 
@@ -616,3 +616,107 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
   <li>Item</li>
 </ul>
 ```
+
+
+
+### &lt;quotation&gt;
+
+Synonyms: &lt;quote&gt;, &lt;q&gt;
+
+**Analogous to the HTML &lt;blockquote&gt; and &lt;q&gt; elements.**
+
+The &lt;quotation&gt; element defines a quotation. If a &lt;quotation&gt; element is contained by a &lt;paragraph&gt; element, then it will be rendered as an in-line quotation, but if not, it will be rendered as a block quotation.
+
+#### Example
+
+```xml
+<p>
+  Einstein said, <q>Imagination is more important than knowledge.</q>
+</p>
+```
+
+
+
+### &lt;code&gt;
+
+**Analogous to the HTML &lt;code&gt; element.**
+
+The &lt;code&gt; element defines a section of text that is computer code. Such text is normally rendered using a monospace font.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|language|-|the name of the programming language or syntax that the code is in|
+
+
+
+### &lt;mathematics&gt;
+
+Synonyms: &lt;maths&gt;, &lt;m&gt;
+
+The &lt;mathematics&gt; element defines a section of mathematics - either in-line mathematics or display-style mathematics. If a &lt;mathematics&gt; element is contained by a &lt;paragraph&gt; element, then it will be rendered as in-line mathematics, but if not, it will be rendered as display-style mathematics.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|format|-|one of 'latex', 'mathml'; the default is 'latex'|
+
+#### Example
+
+```xml
+<p>
+  A straight line is described by <m>y = mx + c</m>.
+</p>
+```
+
+
+
+### &lt;annotation&gt;
+
+Synonyms: &lt;a&gt;
+
+The &lt;annotation&gt; element defines an annotation. Annotations are not rendered when the document is printed, and are a way of adding comments to the digital form of the document.
+
+
+
+### &lt;footnote&gt;
+
+Synonyms: &lt;fn&gt;
+
+The &lt;footnote&gt; element defines a footnote. The footnote can be added into the document at the point where it is relevant - when the final document is rendered, it will be moved to the bottom of the page.
+
+
+
+### &lt;hyperlink&gt;
+
+Synonyms: &lt;hl&gt;
+
+**Analogous to the HTML &lt;a&gt; element.**
+
+The &lt;hyperlink&gt; element defines a hyperlink.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|url|-|analogous to the HTML href attribute on &lt;a&gt; tags|
+
+#### Example
+
+```xml
+<p>
+  The GitHub repository for this XSDR Specification can be found <hl url="https://github.com/BenjaminTMilnes/XSDRSpecification/">here</hl>.
+</p>
+```
+
+
+
+### &lt;horizontal-rule&gt;
+
+Synonyms: &lt;hr&gt;
+
+**Analogous to the HTML &lt;hr&gt; element.**
+
+
