@@ -623,7 +623,7 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
 
 Synonyms: &lt;quote&gt;, &lt;q&gt;
 
-**Analogous to the HTML &lt;blockquote&gt; and &lt;q&gt; elements.
+**Analogous to the HTML &lt;blockquote&gt; and &lt;q&gt; elements.**
 
 The &lt;quotation&gt; element defines a quotation. If a &lt;quotation&gt; element is contained by a &lt;paragraph&gt; element, then it will be rendered as an in-line quotation, but if not, it will be rendered as a block quotation.
 
@@ -634,4 +634,18 @@ The &lt;quotation&gt; element defines a quotation. If a &lt;quotation&gt; elemen
   Einstein said, <q>Imagination is more important than knowledge.</q>
 </p>
 ```
+
+
+
+### &lt;code&gt;
+
+**Analogous to the HTML &lt;code&gt; element.**
+
+The &lt;code&gt; element defines a section of text that is computer code. Such text is normally rendered using a monospace font.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|language|-|the name of the programming language or syntax that the code is in|
 
