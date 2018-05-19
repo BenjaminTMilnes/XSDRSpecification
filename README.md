@@ -649,3 +649,25 @@ The &lt;code&gt; element defines a section of text that is computer code. Such t
 |---|---|---|
 |language|-|the name of the programming language or syntax that the code is in|
 
+
+
+### &lt;mathematics&gt;
+
+Synonyms: &lt;maths&gt;, &lt;m&gt;
+
+The &lt;mathematics&gt; element defines a section of mathematics - either in-line mathematics or display-style mathematics. If a &lt;mathematics&gt; element is contained by a &lt;paragraph&gt; element, then it will be rendered as in-line mathematics, but if not, it will be rendered as display-style mathematics.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|---|---|---|
+|format|-|one of 'latex', 'mathml'; the default is 'latex'|
+
+#### Example
+
+```xml
+<p>
+  A straight line is described by <m>y = mx + c</m>.
+</p>
+```
+
