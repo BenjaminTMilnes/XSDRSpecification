@@ -631,6 +631,7 @@ The &lt;image&gt; element includes an external image file in the document at the
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
+|---|---|---|
 |file||the path to the image file|
 
 
@@ -645,8 +646,8 @@ Example
 
 ```xml
 <figure>
-<image file="" />
-<caption></caption>
+	<image file="" />
+	<caption></caption>
 </figure>
 ```
 
@@ -670,6 +671,7 @@ The &lt;citation&gt; element defines an in-line citation.
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
+|---|---|---|
 |reference|||
 
 
@@ -690,6 +692,7 @@ The &lt;index-entry&gt; element defines text that should be referenced in the in
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
+|---|---|---|
 |text|the text that will be printed in the index for this entry||
 |cross-reference|other items in the index to see||
 
@@ -714,9 +717,10 @@ The &lt;bibliography&gt; element defines where the bibliography should appear in
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
-|format||one of ‘bibtex’, ‘xbr’; the format that the bibliography has been written in; the default is ‘xbr’|
-|order-by||one of ‘title’, ‘author’, ‘date’, ‘usage-in-document’; ‘usage-in-document’ is the default, and orders the items in the bibliography by the order that they are reference in the document|
-|reverse-order||either ‘true’ or ‘false’; reverses the order that the items appear in|
+|---|---|---|
+|format||one of 'bibtex', 'xbr'; the format that the bibliography has been written in; the default is 'xbr'|
+|order-by||one of 'title', 'author', 'date', 'usage-in-document'; 'usage-in-document' is the default, and orders the items in the bibliography by the order that they are reference in the document|
+|reverse-order||either 'true' or 'false'; reverses the order that the items appear in|
 
 
 
@@ -732,7 +736,7 @@ The &lt;italic&gt; element defines italic text.
 
 While for the most part, XSDR follows the principle that the XML should define what the document contains, and the CSS / DSS should define how it looks, the &lt;i&gt;, &lt;b&gt;, &lt;u&gt;, and &lt;s&gt; tags are an exception to this. These tags define italic, bold, underlined, and strikethrough text. These formatting tags are allowed because of how often they need to be used.
 
-For languages that don’t use italic or bold fonts, the way that text within these tags is rendered should be in such a way that the implied meaning is the same as the implied meaning of italic or bold text.
+For languages that don't use italic or bold fonts, the way that text within these tags is rendered should be in such a way that the implied meaning is the same as the implied meaning of italic or bold text.
 
 #### Example
 
@@ -778,6 +782,7 @@ Synonyms: &lt;v&gt;
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
+|---|---|---|
 |name||anything; defines the name of the variable that will be used to reference it in other parts of the document|
 
 
