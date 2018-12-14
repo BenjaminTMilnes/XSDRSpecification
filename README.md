@@ -618,6 +618,206 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
 ```
 
 
+## Images
+
+
+
+### &lt;image&gt;
+
+**Analogous to the HTML &lt;img&gt; tag.**
+
+The &lt;image&gt; element includes an external image file in the document at the given location.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|file||the path to the image file|
+
+
+
+### &lt;figure&gt;
+
+**Analogous to the HTML &lt;figure&gt; tag.**
+
+The &lt;figure&gt; element defines a figure in the document. A figure normally contains an image and a caption.
+
+Example
+
+```xml
+<figure>
+<image file="" />
+<caption></caption>
+</figure>
+```
+
+
+### &lt;caption&gt;
+
+The &lt;caption&gt; element defines a caption for a figure or a table. A &lt;caption&gt; element must appear inside a &lt;figure&gt; or &lt;table&gt; element.
+
+
+
+## Indices and Citations
+
+### &lt;citation&gt;
+
+Synonyms: &lt;c&gt;
+
+**Analogous to the HTML &lt;cite&gt; element.**
+
+The &lt;citation&gt; element defines an in-line citation.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|reference|||
+
+
+
+
+### &lt;table-of-contents&gt;
+
+Synonyms: &lt;contents&gt;
+
+
+
+### &lt;index-entry&gt;
+
+Synonyms: &lt;ie&gt;
+
+The &lt;index-entry&gt; element defines text that should be referenced in the index of the document.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|text|the text that will be printed in the index for this entry||
+|cross-reference|other items in the index to see||
+
+Example
+
+```xml
+<p><index-entry text="Albert Einstein">Einstein</index-entry> said, <q>Imagination is more important than knowledge.</q></p>
+```
+
+
+
+&lt;index&gt;
+
+The &lt;index&gt; element defines where the index of the document should appear. The index is normally automatically generated from the &lt;index-entry&gt; elements that are throughout the document.
+
+
+
+&lt;bibliography&gt;
+
+The &lt;bibliography&gt; element defines where the bibliography should appear in the document. The format attribute can be used to indicate what format the bibliography is in. The bibliography can be written in the BibTeX syntax, or it can be written in XBR - a companion of XSDR for bibliographic data.
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|format||one of ‘bibtex’, ‘xbr’; the format that the bibliography has been written in; the default is ‘xbr’|
+|order-by||one of ‘title’, ‘author’, ‘date’, ‘usage-in-document’; ‘usage-in-document’ is the default, and orders the items in the bibliography by the order that they are reference in the document|
+|reverse-order||either ‘true’ or ‘false’; reverses the order that the items appear in|
+
+
+
+## Formatting Elements
+
+
+
+### &lt;italic&gt;
+
+Synonyms: &lt;i&gt;
+
+The &lt;italic&gt; element defines italic text.
+
+While for the most part, XSDR follows the principle that the XML should define what the document contains, and the CSS / DSS should define how it looks, the &lt;i&gt;, &lt;b&gt;, &lt;u&gt;, and &lt;s&gt; tags are an exception to this. These tags define italic, bold, underlined, and strikethrough text. These formatting tags are allowed because of how often they need to be used.
+
+For languages that don’t use italic or bold fonts, the way that text within these tags is rendered should be in such a way that the implied meaning is the same as the implied meaning of italic or bold text.
+
+#### Example
+
+```xml
+<p>This is a <i>really</i> bad example of using italic text.</p>
+```
+
+
+### &lt;bold&gt;
+
+Synonyms: &lt;b&gt;
+
+The &lt;bold&gt; element defines a section of bold text.
+
+
+
+### &lt;underline&gt;
+
+Synonyms: &lt;u&gt;
+
+The &lt;underline&gt; element defines a section of underlined text.
+
+
+
+### &lt;strikethrough&gt;
+
+Synonyms: &lt;s&gt;
+
+
+
+## Variables
+
+A variable in XSDR is an element that inserts text or a template at a given position which may be different depending on the context of the document at that point. For example, the &lt;page-number&gt; element is a variable - it inserts the page number as a text string into the document at that point. Whatever page that page number element ends up being on in the final rendered document is what the page number will show.
+
+There are lots of different variables. They can be used in the main sections of the document, as well as in templates. In the future it may also be possible to define your own variables.
+
+
+
+### &lt;variable&gt;
+
+Synonyms: &lt;v&gt;
+
+#### Attributes
+
+|Name|Synonyms|Allowed Values|
+|name||anything; defines the name of the variable that will be used to reference it in other parts of the document|
+
+
+
+
+
+
+### &lt;page-number&gt;
+
+Synonyms: &lt;pn&gt;
+
+
+
+### &lt;section-number&gt;
+
+Synonyms: &lt;sn&gt;
+
+
+
+### &lt;page-count&gt;
+
+Synonyms: &lt;pc&gt;
+
+
+
+### &lt;section-count&gt;
+
+Synonyms: &lt;sc&gt;
+
+
+
+### &lt;word-count&gt;
+
+Synonyms: &lt;wc&gt;
+
+The &lt;word-count&gt; tag prints the total number of words in the document. This number ignores anything contained in &lt;mathematics&gt;, &lt;code&gt;, or &lt;annotation&gt; tags, as well as element names, attribute names, and attribute values.
+
+
+## Other Elements
+
 
 ### &lt;quotation&gt;
 
