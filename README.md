@@ -16,6 +16,11 @@ All rights reserved. No part of this repository, or the information contained wi
 + [Sectioning](#sectioning)
 + [Text Flow Elements](#text-flow-elements)
 + [Lists](#lists)
++ [Images](#images)
++ [Indices and Citations] (#indices-and-citations)
++ [Formatting Elements] (#formatting-elements)
++ [Variables] (#variables)
++ [Other Elements] (#other-elements)
 
 
 
@@ -618,6 +623,7 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
 ```
 
 
+
 ## Images
 
 
@@ -626,13 +632,21 @@ The &lt;list-item&gt; element defines an item in an ordered or unordered list.
 
 **Analogous to the HTML &lt;img&gt; tag.**
 
-The &lt;image&gt; element includes an external image file in the document at the given location.
+The &lt;image&gt; element includes an external image file in the document at the given location. The image file can be a raster image, such as a PNG or a JPEG, or a vector image, such as an SVG.
+
+It is not essential for an image element to be contained by a figure element, but if you're making a document such as an academic paper or book, then it's a good idea.
 
 #### Attributes
 
 |Name|Synonyms|Allowed Values|
 |---|---|---|
 |file||the path to the image file|
+
+#### Example
+
+```xml
+<image file="funnycat.png" />
+```
 
 
 
@@ -642,12 +656,14 @@ The &lt;image&gt; element includes an external image file in the document at the
 
 The &lt;figure&gt; element defines a figure in the document. A figure normally contains an image and a caption.
 
-Example
+When the XSDR compiler processes the XSDR document, it will give each figure a number, thus there is no need to manually number the figures.
+
+#### Example
 
 ```xml
 <figure>
-	<image file="" />
-	<caption></caption>
+	<image file="funnycat.png" />
+	<caption>A funny cat</caption>
 </figure>
 ```
 
@@ -659,6 +675,8 @@ The &lt;caption&gt; element defines a caption for a figure or a table. A &lt;cap
 
 
 ## Indices and Citations
+
+
 
 ### &lt;citation&gt;
 
@@ -672,8 +690,13 @@ The &lt;citation&gt; element defines an in-line citation.
 
 |Name|Synonyms|Allowed Values|
 |---|---|---|
-|reference|||
+|reference|r|any valid bibliographic reference - normally a text string consisting of just letters and numbers|
 
+#### Example
+
+```xml
+<p>Winter is coming.<c reference="JonSnow" /></p>
+```
 
 
 
